@@ -8,6 +8,8 @@ import "./App.css";
 import Weather from "./assets/weather.png"
 
 
+////how to get the stock data of Tesla in python?
+
 function App() {
  
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -17,10 +19,10 @@ function App() {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`
     );
     const forecastFetch = fetch(
-      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
+      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`
     );
 
     Promise.all([currentWeatherFetch, forecastFetch])
@@ -45,3 +47,5 @@ function App() {
 }
 
 export default App;
+
+

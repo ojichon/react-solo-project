@@ -9,6 +9,6 @@ root.render(
   <React.StrictMode>
     <AuthContexProvider>
       <App />
-      </AuthContexProvider>
+    </AuthContexProvider>
   </React.StrictMode>
 );

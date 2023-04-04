@@ -30,18 +30,19 @@ const Home = ({ onSearchChange }) => {
   };
 
   return (
-    <div className="background" style={{ backgroundImage: `url(${Weather})` }}>
-      <div className="search">
-        <AsyncPaginate
-          placeholder="Search for city"
-          debounceTimeout={600}
-          value={search}
-          onChange={handleOnChange}
-          loadOptions={loadOptions}
-        />
-      </div>
+    <div className="search">
+      <AsyncPaginate
+        placeholder="Search for city"
+        debounceTimeout={600}
+        value={search}
+        onChange={handleOnChange}
+        loadOptions={loadOptions}
+      />
     </div>
   );
 };
 
 export default Home;
+
+
+
