@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Witherapp/static/css/main.625b10e6.css",
+    "main.js": "/Witherapp/static/js/main.b7110d0b.js",
+    "static/media/weather.png": "/Witherapp/static/media/weather.43ea863b99b2cf4b6f8f.png",
+    "index.html": "/Witherapp/index.html",
+    "main.625b10e6.css.map": "/Witherapp/static/css/main.625b10e6.css.map",
+    "main.b7110d0b.js.map": "/Witherapp/static/js/main.b7110d0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.625b10e6.css",
+    "static/js/main.b7110d0b.js"
+  ]
+}
